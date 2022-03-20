@@ -17,6 +17,7 @@ function Product() {
           alt=""
           srcset=""
         />
+        <button>Add to Basket</button>
       </div>
     </div>
   );
