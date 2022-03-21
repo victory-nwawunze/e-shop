@@ -1,16 +1,26 @@
 /** @format */
 
 import "./App.css";
-
-import Header from "./Header";
 import Home from "./Home";
-import Product from "./Product";
+import Header from "./Header";
+import Checkout from "./Checkout";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <Product />
+      <Router>
+        <Routes>
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+          </Route>
+          <Route path="/" exact="">
+            <Header />
+            <Home />
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
