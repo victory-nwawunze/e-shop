@@ -11,7 +11,10 @@ function Product() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
           adipisicing elit. Fugiat, (provident).
         </p>
-        <p className="product__price">$30</p>
+        <p className="product__price">
+          <small>$</small>
+          <strong>30</strong>
+        </p>
         <div className="product__rating">❤❤</div>
       </div>
       <img
